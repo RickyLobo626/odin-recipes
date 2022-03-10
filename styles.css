@@ -1,0 +1,73 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: #c46a16;
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e7ba65;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 2.3rem;
+  font-style: italic;
+  margin-bottom: 0;
+  color: white;
+  text-shadow: 0 1px 10px black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item {
+  background-color: var(--orange);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 1px 10px black;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.item h2{
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: white;
+}
+
+.item a, .item a:visited {
+  text-decoration: none;
+}
+
+.item a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+footer {
+  font-weight: 900;
+}
