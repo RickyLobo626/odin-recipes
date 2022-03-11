@@ -3,34 +3,48 @@
 }
 
 :root {
-  --orange: #c46a16;
+  --orange: #da7a21;
+  --blue: #d3fffb;
+  --blue2: #56e6dc;
   font-size: 18px;
+  font-weight: 500;
   font-family: 'Merriweather', serif;
 }
 
 body {
+  position: relative;
   display: flex;
-  height: 100vh;
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  background-color: #e7ba65;
+  background-color: var(--blue);
+}
+
+header {
+  background-color: var(--blue2);
+  text-align: center;
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 5rem;
+}
+
+.home-main {
+  margin: 6rem 0 10rem 0;
+}
+ 
+.recipe-main {
+  margin-bottom: 10rem;
 }
 
 .logo {
+  font-size: 2.5rem;
   font-weight: 900;
-  font-size: 2.3rem;
   font-style: italic;
-  margin-bottom: 0;
-  color: white;
-  text-shadow: 0 1px 10px black;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  color: var(--orange);
+  text-shadow: 2px -1px 2px white;
+  margin: 1rem 0 1rem 0;
 }
 
 .item {
@@ -40,7 +54,7 @@ main {
   align-items: center;
   padding: 25px;
   border-radius: 15px;
-  box-shadow: 0 1px 10px black;
+  box-shadow: 0 0 10px black;
 }
 
 .item:hover {
@@ -55,11 +69,11 @@ main {
 
 .item h2{
   font-size: 1.4rem;
-  font-weight: 800;
+  font-weight: 900;
   color: white;
 }
 
-.item a, .item a:visited {
+.item a, .item a:visited, header a {
   text-decoration: none;
 }
 
@@ -68,6 +82,60 @@ main {
   color: white;
 }
 
-footer {
+.recipe-head {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.recipe-head h2 {
+  color: black;
+  font-size: 1.7rem;
   font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.recipe-head img{
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px black;
+  margin-bottom: 1rem;
+}
+
+.description, li  {
+  font-size: 1.1rem;
+}
+
+.div-ingredients , .div-steps {
+  color: rgb(255, 250, 250);
+  width: 600px;
+  background-color: var(--orange);
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  padding: 1px 15px 10px 15px;
+  box-shadow: 0 0 10px black;
+}
+
+.div-ingredients {
+  margin-top: 3.5rem;
+}
+
+.div-ingredients h3, .div-steps h3 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 20px 10px 40px 10px;
+}
+
+li {
+  margin-bottom: 25px;
+  width: 95%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
