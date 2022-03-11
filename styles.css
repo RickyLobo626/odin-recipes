@@ -6,7 +6,7 @@
   --red: #ee7c7c;
   --blue: #d3fffb;
   --blue2: #92eee8;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 500;
   font-family: 'Merriweather', serif;
 }
@@ -24,7 +24,6 @@ body {
 
 header {
   background-color: var(--blue2);
-  text-align: center;
   width: 100%;
   height: 5rem;
   margin-bottom: 5rem;
@@ -40,9 +39,7 @@ header {
 
 .logo {
   font-size: 2.6rem;
-  font-weight: 900;
   font-style: italic;
-  color: var(--red);
   text-shadow: 2px -1px white;
   margin: 1rem 0 1rem 0;
 }
@@ -54,13 +51,13 @@ header {
 }
 
 .item {
-  background-color: var(--red);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 25px;
-  border-radius: 15px;
+  background-color: var(--red);
   box-shadow: 0 0 10px black;
+  border-radius: 10px;
 }
 
 .item:hover {
@@ -74,57 +71,36 @@ header {
   border-radius: 10px;
 }
 
-.item h2{
-  font-size: 1.4rem;
+.item h2 {
+  font-size: 1.3rem;
   font-weight: 900;
-  color: white;
-}
-
-.item a, .item a:visited, header a {
-  text-decoration: none;
 }
 
 .item a:hover {
   text-decoration: underline;
-  color: white;
 }
 
 .recipe-head {
-  text-align: center;
   margin-bottom: 5rem;
 }
 
 .recipe-head h2 {
-  color: var(--red);
   font-size: 1.9rem;
-  font-weight: 900;
   margin-top: 0;
   margin-bottom: 3rem;
 }
 
-.recipe-head img{
+.recipe-head img {
   width: 350px;
   height: 350px;
-  border-radius: 10px;
-  box-shadow: 0 0 12px black;
   margin-bottom: 2rem;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
 }
 
 .description, li  {
-  font-size: 1.1rem;
   max-width: 900px;
   margin: 0 2rem;
-}
-
-.div-ingredients , .div-steps {
-  color: rgb(255, 250, 250);
-  max-width: 900px;
-  margin: 0 3rem;
-  background-color: var(--red);
-  margin-top: 3rem;
-  border-radius: 10px;
-  padding: 1px 15px 30px 15px;
-  box-shadow: 0 0 10px black;
 }
 
 .div-ingredients {
@@ -132,27 +108,57 @@ header {
 }
 
 .div-ingredients p {
-  font-weight: 600;
-  font-size: 1.2rem;
   margin: 3rem 2rem 1.5rem 2rem;
 }
 
-.div-ingredients h3, .div-steps h3 {
-  font-size: 1.4rem;
-  text-align: center;
-  margin: 20px 10px 40px 10px;
-}
-
 li {
-  font-weight: 600;
   margin-bottom: 1.8rem;
   max-width: 90%;
+  font-weight: 600;
 }
 
 footer {
   position: absolute;
   bottom: 0;
+}
+
+/* GROUPS */
+
+.div-ingredients , .div-steps {
+  background-color: var(--red);
+  color: white;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 3rem;
+  margin-top: 3rem;
+  padding: 1px 15px 30px 15px;
+}
+
+.div-ingredients h3, .div-steps h3 {
+  font-size: 1.3rem;
   text-align: center;
+  margin: 20px 10px 40px 10px;
+}
+
+header, .recipe-head, footer {
+  text-align: center;
+}
+
+.div-ingredients p, footer {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+.item a:hover, .item h2 {
+  color: white;
+}
+
+.logo, .recipe-head h2 {
+  color: var(--red);
+  font-weight: 900;
+}
+
+.item a, .item a:visited, header a {
+  text-decoration: none;
 }
