@@ -12,7 +12,6 @@
 }
 
 body {
-  position: relative;
   display: flex;
   margin: 0;
   width: 100vw;
@@ -23,10 +22,12 @@ body {
 }
 
 header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
   background-color: var(--white);
   width: 100%;
   height: 5rem;
-  margin-bottom: 5rem;
 }
 
 .home-main {
@@ -48,6 +49,7 @@ header {
   display: flex;
   flex-direction: row;
   gap: 50px;
+  margin-top: 5rem;
 }
 
 .item {
@@ -82,8 +84,8 @@ header {
 }
 
 .recipe-head h2 {
+  margin-top: 10rem;
   font-size: 1.9rem;
-  margin-top: 0;
   margin-bottom: 3rem;
 }
 
