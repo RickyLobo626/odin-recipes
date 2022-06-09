@@ -33,6 +33,10 @@ header {
   height: 5rem;
 }
 
+main {
+  flex: 1 1 auto;
+}
+
 .home-main {
   margin: 6rem 0 10rem 0;
 }
@@ -117,8 +121,6 @@ li {
 
 footer {
   color: var(--blue2);
-  position: absolute;
-  bottom: 0;
 }
 
 /* GROUPS */
